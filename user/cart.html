@@ -9,7 +9,7 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <h1><i class="fa-solid fa-car"></i> VENICE</h1>
                 <p>Phụ tùng ô tô Việt Nam</p>
             </a>
@@ -17,6 +17,12 @@
                 <input type="text" placeholder="Tìm kiếm sản phẩm...">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
+            <div class="box-user">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                    <span><a href="account.html">Tài khoản </a></span>
+                </div>
+            </div>
             <div class="header-info">
                 <i class="fa-solid fa-phone"></i>
                 <div>
@@ -28,7 +34,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                 <div>
                     <span class="cart-count">Sản Phẩm (3)</span>
-                    <span>Giỏ hàng</span>
+                    <span><a href="cart.html"> Giỏ hàng</a></span>
                 </div>
             </div>
         </div>
@@ -45,10 +51,12 @@
                     <button class="btn-remove-all">xóa tất cả</button>
                 </div>
 
-                <div class="cart-item">
+                <a class="cart-item" href="Product_details.html">
+                    
                     <span class="icon-checked item-check">✔</span>
+                    
                     <div class="item-details">
-                        <img src="../admin/image/cart/Screenshot 2025-11-02 161816.png" alt="Áp suất lốp Texpad" class="item-image">
+                        <img src="../user/image/cart/Screenshot 2025-11-02 161816.png" alt="Áp suất lốp Texpad" class="item-image">
                         <div class="item-info">
                             <p class="item-name">Áp suất lốp Texpad tích hợp màn hình odo VF3</p>
                             <p class="item-price-unit">2,000,000 đ</p>
@@ -62,12 +70,13 @@
                     </div>
                     <p class="item-total-price">2,000,000 đ</p>
                     <button class="btn-remove-item">X</button>
-                </div>
+                    </a>
+                </a>
 
                 <div class="cart-item">
                     <span class="icon-checked item-check">✔</span>
                     <div class="item-details">
-                        <img src="../admin/image/cart/Screenshot 2025-11-06 074347.png" alt="Cảm biến áp suất lốp Icar" class="item-image">
+                        <img src="../user/image/cart/Screenshot 2025-11-06 074347.png" alt="Cảm biến áp suất lốp Icar" class="item-image">
                         <div class="item-info">
                             <p class="item-name">Cảm biến áp suất lốp Icar Ellisaffe C398 cho ô tô</p>
                             <p class="item-price-unit">2,800,000 đ</p>
@@ -86,7 +95,7 @@
                 <div class="cart-item">
                     <span class="icon-checked item-check">✔</span>
                     <div class="item-details">
-                        <img src="../admin/image/cart/Screenshot 2025-11-06 074413.png" alt="Bộ chống trộm Lotus Việt" class="item-image">
+                        <img src="../user/image/cart/Screenshot 2025-11-06 074413.png" alt="Bộ chống trộm Lotus Việt" class="item-image">
                         <div class="item-info">
                             <p class="item-name">Bộ chống trộm Lotus Việt</p>
                             <p class="item-price-unit">1,000,000 đ</p>
@@ -127,8 +136,8 @@
                     </div>
                 </div>
 
-                <div class="form-group-box shipping-address">
-                    <h2>Địa chỉ giao hàng</h2>
+                <div class="form-group-box shipping-address">   
+                    <label for="name">Địa chỉ giao hàng</label>
                     <div class="select-row">
                         <select name="province" id="province"><option value="">Chọn tỉnh/thành</option></select>
                         <select name="district" id="district"><option value="">Chọn quận/huyện</option></select>
@@ -138,19 +147,20 @@
                 </div>
 
                 <div class="form-group-box payment-method">
-                    <h2>Phương thức thanh toán</h2>
+                    <label for="name">Phương thức thanh toán</label>
                     <div class="radio-option">
                         <label>Thanh toán khi nhận hàng (COD)</label>
                         <span class="toggle-switch"></span>
                     </div>
                     <div class="radio-option">
                         <label>Chuyển khoản ngân hàng</label>
-                        <span class="toggle-switch active"></span>
+                        <span class="toggle-switch "></span> 
+                        <!-- /*active */ -->
                     </div>
                 </div>
 
                 <div class="form-group-box notes">
-                    <h2>Ghi chú</h2>
+                    <label for="name">Ghi chú</label>
                     <textarea placeholder="Ghi chú cho đơn hàng (không bắt buộc)"></textarea>
                 </div>
             </section>
